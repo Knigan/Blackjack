@@ -353,7 +353,7 @@ void game(float& score, float bet) {
 }
 
 void BotVsBot(int count, float bet) {
-	float score = 0;
+	float score = 0.0f;
 	for (int i = 0; i < count; ++i) {
 		Hand my_hand;
 		Hand dealer_hand;
