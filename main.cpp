@@ -332,6 +332,7 @@ void game(float& score, float bet) {
 				std::cout << "The victory is yours! You have earned " << real_bet << "$!" << std::endl;
 			}
 			else {
+				real_bet *= 1.5f;
 				std::cout << "Blackjack! You have earned " << real_bet << "$!" << std::endl;
 			}
 			score += real_bet;
@@ -353,7 +354,7 @@ void game(float& score, float bet) {
 }
 
 void BotVsBot(int count, float bet) {
-	float score = 0.0f;
+	float score = 0;
 	for (int i = 0; i < count; ++i) {
 		Hand my_hand;
 		Hand dealer_hand;
